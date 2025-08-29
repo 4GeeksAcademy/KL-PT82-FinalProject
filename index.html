@@ -1,16 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="icon" href="/4geeks.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/front/main.jsx"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Venture</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <h1 class="logo">E-Venture</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#why">Why E-Venture</a></li>
+      <li><a href="#cta">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="hero-video.mp4" type="video/mp4">
+      Your browser does not support video backgrounds.
+    </video>
+    <div class="overlay">
+      <h1 class="title">Where Every Event Becomes a Story</h1>
+      <p class="subtitle">Plan, share, and remember your events.</p>
+      <a href="#features" class="cta-button">Get Started</a>
+      <a href="#why" class="cta-button secondary">See How It Works</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>My Events</h3>
+        <p>Create, view, edit, and manage your events.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-vote-yea"></i>
+        <h3>RSVP & Polling</h3>
+        <p>Track attendee responses and vote on event options.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-star"></i>
+        <h3>Favorites</h3>
+        <p>Save events or members you love and access them anytime.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-bell"></i>
+        <h3>Notifications</h3>
+        <p>Receive updates about event changes, RSVPs, and more.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-user-circle"></i>
+        <h3>Profile</h3>
+        <p>Customize your account, preferences, and notifications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events / Carousel Section -->
+  <section id="events" class="events">
+    <h2>Upcoming Events</h2>
+    <div class="carousel">
+      <div class="event-card">
+        <h3>Concert Night</h3>
+        <p>Date: June 15, 2025 | RSVPs: 45</p>
+      </div>
+      <div class="event-card">
+        <h3>Foodie Meetup</h3>
+        <p>Date: June 20, 2025 | RSVPs: 32</p>
+      </div>
+      <div class="event-card">
+        <h3>Tech Hackathon</h3>
+        <p>Date: June 28, 2025 | RSVPs: 50</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why E-Venture Section -->
+  <section id="why" class="why">
+    <h2>Why E-Venture?</h2>
+    <div class="why-grid">
+      <div class="panel">
+        <h3>Simple & Fast</h3>
+        <p>Plan your events quickly with an easy-to-use interface.</p>
+      </div>
+      <div class="panel">
+        <h3>Stay Connected</h3>
+        <p>Follow members, RSVP, and never miss a moment.</p>
+      </div>
+      <div class="panel">
+        <h3>Memories That Last</h3>
+        <p>Share experiences, photos, and notes to remember your adventures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 E-Venture. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#about">About</a> | 
+      <a href="#contact">Contact</a> | 
+      <a href="#terms">Terms</a> | 
+      <a href="#privacy">Privacy</a>
+    </div>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Simple horizontal carousel
+    const carousel = document.querySelector('.carousel');
+    let offset = 0;
+    const cardWidth = 320; // width + margin
+    setInterval(() => {
+      if(offset <= -(carousel.scrollWidth - carousel.clientWidth)){
+        offset = 0;
+      } else {
+        offset -= cardWidth;
+      }
+      carousel.style.transform = `translateX(${offset}px)`;
+    }, 3000);
+  </script>
+</body>
 </html>
